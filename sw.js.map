@@ -1,0 +1,19 @@
+{
+  "version": 3,
+  "file": "sw.js",
+  "sources": [
+    "../../AppData/Local/Temp/f0f4fd7c5ae39a94c1ba03149e1de669/sw.js"
+  ],
+  "sourcesContent": [
+    "import {precacheAndRoute as workbox_precaching_precacheAndRoute} from 'C:/Users/Kiana/AppData/Roaming/npm/node_modules/workbox-cli/node_modules/workbox-precaching/precacheAndRoute.mjs';/**\n * Welcome to your Workbox-powered service worker!\n *\n * You'll need to register this file in your web app.\n * See https://goo.gl/nhQhGp\n *\n * The rest of the code is auto-generated. Please don't update this file\n * directly; instead, make changes to your Workbox build configuration\n * and re-run your build process.\n * See https://goo.gl/2aRDsh\n */\n\n\n\n\n\n\n\n\nself.addEventListener('message', (event) => {\n  if (event.data && event.data.type === 'SKIP_WAITING') {\n    self.skipWaiting();\n  }\n});\n\n\n\n\n/**\n * The precacheAndRoute() method efficiently caches and responds to\n * requests for URLs in the manifest.\n * See https://goo.gl/S9QRab\n */\nworkbox_precaching_precacheAndRoute([\n  {\n    \"url\": \"img/10C.jpg\",\n    \"revision\": \"10306321792f10fea662c5a2328a7dff\"\n  },\n  {\n    \"url\": \"img/2D.jpg\",\n    \"revision\": \"2aa6787199044aa32c26051de37701e8\"\n  },\n  {\n    \"url\": \"img/4H.jpg\",\n    \"revision\": \"8fccba55ad0185cae67fbf191a92121a\"\n  },\n  {\n    \"url\": \"img/5s.jpg\",\n    \"revision\": \"6d26f2e140fa9262b6fefe18cdd798d6\"\n  },\n  {\n    \"url\": \"img/7H.jpg\",\n    \"revision\": \"25680783dfa2cd51989ed1c519a8904f\"\n  },\n  {\n    \"url\": \"img/AD.jpg\",\n    \"revision\": \"46765e088045b1209903fee664b6a5a0\"\n  },\n  {\n    \"url\": \"img/AS.jpg\",\n    \"revision\": \"d259878f946c6ac00d827521fb495ca0\"\n  },\n  {\n    \"url\": \"img/bg2.jpg\",\n    \"revision\": \"92c3486809610d773aa41f6763319be1\"\n  },\n  {\n    \"url\": \"img/cardback11.jpg\",\n    \"revision\": \"278425b19a846387e593cfafe72c0a01\"\n  },\n  {\n    \"url\": \"img/JC.jpg\",\n    \"revision\": \"4cdd8ae07e2e18eb775f1997c5e57146\"\n  },\n  {\n    \"url\": \"img/KH.jpg\",\n    \"revision\": \"eac290f7e7ec1d519b17d8c524f1e300\"\n  },\n  {\n    \"url\": \"img/QS.jpg\",\n    \"revision\": \"33f58f4b815a6410a74be43f888a8fe8\"\n  },\n  {\n    \"url\": \"index.html\",\n    \"revision\": \"f689e3237709d5ad69cd762a18c13e9e\"\n  },\n  {\n    \"url\": \"script.js\",\n    \"revision\": \"cdc610acad1b6046979e02b2abd5e642\"\n  },\n  {\n    \"url\": \"style.css\",\n    \"revision\": \"d709a1df597f342552ebab16d8515bd0\"\n  }\n], {\n  \"ignoreURLParametersMatching\": [/^utm_/, /^fbclid$/]\n});\n\n\n\n\n\n\n\n\n"
+  ],
+  "names": [
+    "self",
+    "addEventListener",
+    "event",
+    "data",
+    "type",
+    "skipWaiting"
+  ],
+  "mappings": "0yBAmBAA,KAAKC,iBAAiB,WAAYC,IAC5BA,EAAMC,MAA4B,iBAApBD,EAAMC,KAAKC,MAC3BJ,KAAKK,oCAY2B,CAClC,KACS,uBACK,oCAEd,KACS,sBACK,oCAEd,KACS,sBACK,oCAEd,KACS,sBACK,oCAEd,KACS,sBACK,oCAEd,KACS,sBACK,oCAEd,KACS,sBACK,oCAEd,KACS,uBACK,oCAEd,KACS,8BACK,oCAEd,KACS,sBACK,oCAEd,KACS,sBACK,oCAEd,KACS,sBACK,oCAEd,KACS,sBACK,oCAEd,KACS,qBACK,oCAEd,KACS,qBACK,qCAEb,6BAC8B,CAAC,QAAS"
+}
