@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="icon" sizes="192x192" href="icon.png">
+
+
+</head>
+
+<body>
+   
+    <h1>Memory Game</h1>
+    <!-- <div class="game-info-container">
+        <div class="game-info">
+          Time <span id="time-remaining">100</span>
+        </div>
+        <div class="game-info">
+          Flips <span id="flips">0</span>
+        </div> -->
+      </div>
+    <div class="container">
+        <div class="card" data-name="kh"><img src="img/KH.jpg" alt="" class="front-face"><img src="img/cardback11.jpg" alt=""
+                class="back-face"></div>
+        <div class="card" data-name="ad"><img src="img/AD.jpg" alt="" class="front-face"><img src="img/cardback11.jpg" alt=""
+                class="back-face"></div>
+        <div class="card" data-name="kh"><img src="img/KH.jpg" alt="" class="front-face"><img src="img/cardback11.jpg" alt=""
+                class="back-face"></div>
+        <div class="card" data-name="5s"><img src="img/5S.jpg" alt="" class="front-face"><img src="img/cardback11.jpg" alt=""
+                class="back-face"></div>
+        <div class="card" data-name="2d"><img src="img/2D.jpg" alt="" class="front-face"><img src="img/cardback11.jpg" alt=""
+                class="back-face"></div>
+        <div class="card" data-name="jc"><img src="img/JC.jpg" alt="" class="front-face"><img src="img/cardback11.jpg" alt=""
+                class="back-face"></div>
+        <div class="card" data-name="2d"><img src="img/2D.jpg" alt="" class="front-face"><img src="img/cardback11.jpg" alt=""
+                class="back-face"></div>
+        <div class="card" data-name="5s"><img src="img/5S.jpg" alt="" class="front-face"><img src="img/cardback11.jpg" alt=""
+                class="back-face"></div>
+        <div class="card" data-name="qs"><img src="img/QS.jpg" alt="" class="front-face"><img src="img/cardback11.jpg" alt=""
+                class="back-face"></div>
+        <div class="card" data-name="jc"><img src="img/JC.jpg" alt="" class="front-face"><img src="img/cardback11.jpg" alt=""
+                class="back-face"></div>
+        <div class="card" data-name="qs"><img src="img/QS.jpg" alt="" class="front-face"><img src="img/cardback11.jpg" alt=""
+                class="back-face"></div>
+        <div class="card" data-name="ad"><img src="img/AD.jpg" alt="" class="front-face"><img src="img/cardback11.jpg" alt=""
+                class="back-face"></div>
+    </div>
+
+    <div id="modal" class="modal-overlay">
+        <div class="modal-body">
+            <p id="modal-text">you have 60 seconds to find all matching cards</p>
+            <div class="modal-buttons-container">
+                <button id="modal-btn">PLAY !</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+        .then(res => console.log(res))
+        .catch(err=>console.log(err));
+  });
+}
+    </script>
+</body>
+
+</html>
