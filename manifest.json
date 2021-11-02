@@ -1,0 +1,18 @@
+{
+	"short_name": "game",
+	"name": "memory game",
+	"background_color": "#00aae7",
+	"theme_color": "#00aae7",
+	"start_url": "/",
+	"scope": "/" ,
+	"display": "standalone",
+	"orientation": "portrait",
+	"icons": [
+		{
+			"src": "build/icon.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		}
+	],
+	"prefer_related_applications": false
+}
