@@ -1,8 +1,8 @@
 {
   "short_name": "Memory Game",
   "name": "Memory Game",
-  "background_color": "brown",
-  "theme_color": "brown",
+  "background_color": "rgb(100, 65, 65)",
+  "theme_color": "rgb(100, 65, 65)",
   "start_url": ".",
   "display": "standalone",
   "orientation": "portrait",
@@ -42,6 +42,12 @@
       "src": "images/icons/apple-touch-icon.png",
       "sizes": "180x180",
       "type": "image/png"
+    },
+    {
+      "src": "images/icons/maskable_icon_x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
   "splash_pages": null,
