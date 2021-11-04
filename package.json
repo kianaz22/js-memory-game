@@ -1,6 +1,27 @@
 {
+  "homepage": "https://kianaz22.github.io/js-memory-game",
   "dependencies": {
     "node-sass": "^6.0.1",
     "typescript": "^4.4.4"
-  }
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  },
+  "name": "javascript-memory-game",
+  "version": "1.0.0",
+  "main": "src-sw.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kianaz22/js-memory-game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kianaz22/js-memory-game/issues"
+  },
+  "description": ""
 }

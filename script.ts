@@ -7,7 +7,7 @@ btn!.addEventListener('click', play);
 
 const flags = { hasFlipped: false, freezeBoard: false };
 let counter = 0
-const compareArr: Array<HTMLElement|null> = [];
+let compareArr: Array<HTMLElement> = [];
 
 const cards = document.querySelectorAll<HTMLElement>(".card") 
 cards.forEach((card) => card.addEventListener("click", flipCard));
@@ -66,8 +66,11 @@ function flipBack() {
 function resetBoard() {
   flags.hasFlipped= false;
   flags.freezeBoard = false;
-  compareArr.forEach(card => card = null);
+  compareArr = [];
 }
+
+
+
 
 
 
