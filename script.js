@@ -1,15 +1,14 @@
-"use strict";
 /*  modal */
-const modal = document.getElementById('modal');
-const modalText = document.getElementById('modal-text');
-const btn = document.getElementById('modal-btn');
+var modal = document.getElementById('modal');
+var modalText = document.getElementById('modal-text');
+var btn = document.getElementById('modal-btn');
 btn.addEventListener('click', play);
 /* end of  modal */
-const flags = { hasFlipped: false, freezeBoard: false };
-let counter = 0;
-const compareArr = [];
-const cards = document.querySelectorAll(".card");
-cards.forEach((card) => card.addEventListener("click", flipCard));
+var flags = { hasFlipped: false, freezeBoard: false };
+var counter = 0;
+var compareArr = [];
+var cards = document.querySelectorAll(".card");
+cards.forEach(function (card) { return card.addEventListener("click", flipCard); });
 function play() {
     modal.style.display = 'none';
     newGame();
@@ -19,13 +18,13 @@ function victory() {
     modalText.textContent = 'you won! click the button to play again';
 }
 function newGame() {
-    cards.forEach((card) => card.classList.remove("flip"));
+    cards.forEach(function (card) { return card.classList.remove("flip"); });
     shuffle();
     counter = 0;
 }
 function shuffle() {
-    cards.forEach(card => {
-        let random = Math.floor(Math.random() * 12);
+    cards.forEach(function (card) {
+        var random = Math.floor(Math.random() * 12);
         card.style.order = String(random);
     });
 }
@@ -43,11 +42,11 @@ function flipCard() {
     checkForMatch();
 }
 function checkForMatch() {
-    let result = compareArr[1].dataset.name === compareArr[0].dataset.name;
+    var result = compareArr[1].dataset.name === compareArr[0].dataset.name;
     result ? disableCards() : flipBack();
 }
 function disableCards() {
-    compareArr.forEach((card) => removeEventListener("click", flipCard));
+    compareArr.forEach(function (card) { return removeEventListener("click", flipCard); });
     resetBoard();
     if (counter === 5) {
         victory();
@@ -57,13 +56,13 @@ function disableCards() {
 }
 function flipBack() {
     flags.freezeBoard = true;
-    setTimeout(() => {
-        compareArr.forEach((card) => card === null || card === void 0 ? void 0 : card.classList.remove("flip"));
+    setTimeout(function () {
+        compareArr.forEach(function (card) { return card === null || card === void 0 ? void 0 : card.classList.remove("flip"); });
         resetBoard();
     }, 1500);
 }
 function resetBoard() {
     flags.hasFlipped = false;
     flags.freezeBoard = false;
-    compareArr.forEach(card => card = null);
+    compareArr = [];
 }
